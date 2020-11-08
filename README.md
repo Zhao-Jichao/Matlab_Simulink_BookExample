@@ -1,8 +1,9 @@
+@[TOC](《Matlab/Simulink与控制系统仿真》程序指令总结)
 # Matlab_Simulink_BookExample
 
-《Matlab/Simulink与控制系统仿真》
+图书：《Matlab/Simulink与控制系统仿真》
 
-## 2. Matlab 计算基础
+# 2. Matlab 计算基础
 
 ## 表2.1 Matlab 常用文件管理命令
 
@@ -17,11 +18,30 @@
 
 |命令|功能|命令|功能|
 |-|-|-|-|
-|||||
+|help matfun|矩阵函数-数值线性代数|help datafun|数据分析和傅立叶变换函数|
+|help general|通用命令|help ops|操作符和特殊字符|
+|help graphics|通用图形函数|help polyfun|多项式和内插函数|
+|help elfun|基本的数学函数|help lang|语言结构和调试|
+|help elmat|基本矩阵和矩阵操作|help strfun|字符串函数|
+|help control|控制系统工具箱函数|||
 
-## 表2.3
+## 表2.3 Matlab 默认常量
 
-## 表2.4
+|名称|说明|名称|说明|
+|-|-|-|-|
+|pi|圆周率|eps|浮点数的相对误差|
+|INF (或inf)|无穷大|i(或j)|虚数单位，定义为$\sqrt{-1}$|
+|NaN (或nan)|代表不定值 (即0/0)|nargin|函数实际输入参数个数|
+|realman|最大的正实数|nargout|函数实际输出参数个数|
+|realmix|最小的正实数|ANS (或ans)|默认变量名，以应答最近一次操作运算结果|
+
+## 表2.4 Matlab 的数据显示格式
+
+|格式|含义|格式|含义|
+|-|-|-|-|
+|format (short)|短格式 (5位定点数)|format long e|长格式 e 方式|
+|format long|长格式 (15位定点数)|format bank|2位十进制格式|
+|format short e|短格式 e 方式|format hex|十六进制格式|
 
 ## 表2.5 Matlab 常用特殊矩阵生成函数
 
@@ -50,10 +70,10 @@
 |操作符号|功能说明|操作符号|功能说明|
 |-|-|-|-|
 |rot90( )|矩阵逆时针旋转 90 度|eig( )|矩阵的特征值和特征向量|
-|||||
-|||||
-|||||
-|||||
+|flipud( )|矩阵上下翻转|rank( )|计算矩阵的秩|
+|fliplr( )|矩阵左右反转|trace( )|计算矩阵的迹|
+|flipdim( )|矩阵的某维元素翻转|norm( )|计算矩阵的范数|
+|shiftdim( )|矩阵的元素移位|poly( )|计算矩阵的特征方程的根|
 
 ## 表2.8 常用矩阵分解运算函数
 
@@ -122,5 +142,22 @@ e.g. subs(f, {x,y}, {-1,2}) 对函数 f 中自变量 x 和 y 分别赋值 -1 和
 
 `residue()` 求有理式的留数
 
+`laplace` 拉氏变换
+`ilaplace` 拉氏反变换
 
+`ztrans()` Z变换
+`iztrans()` Z反变换
+
+## 2.8 Matlab 常用绘图命令
+
+`help graph2d` 所有画二维图形的命令
+`help graph3d` 所有画三维图形的命令
+
+`plot(x1, y1, option1, x2, y2, option2, ...)`
+`figure()` 图形窗口
+`subplot()` 分割图形
+
+## 2.9 Matlab 程序设计
+
+`function[out1, out2] = filename(in1, in2, ...)`
 
