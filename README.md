@@ -280,3 +280,9 @@ e.g. subs(f, {x,y}, {-1,2}) 对函数 f 中自变量 x 和 y 分别赋值 -1 和
 |dstep|dstep(dnum, dden, n)|求离散系统单位阶跃响应|
 |dimpulse|dimpulse(dnum, dden, n)|求离散系统单位脉冲响应|
 |dlsim|dlsim(dnum, dden, u)|求离散系统在输入 u 下的响应|
+
+# 13. 最优控制系统
+
+`lqr()` `lqr2()` `lqry()` 求解连续系统线性二次型最优控制问题的函数
+
+`dlqr()` `dlqry()` 求解离散系统线性二次型最优控制
