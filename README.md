@@ -209,3 +209,14 @@ e.g. subs(f, {x,y}, {-1,2}) 对函数 f 中自变量 x 和 y 分别赋值 -1 和
 `feedback(num1, den1, num2, den2, sign)` 反馈连接函数
 
 `cloop(num, den, sign)` 闭环连接函数
+
+# 5. Matlab/Simulink 在时域分析中的应用
+
+`step()` 单位阶跃响应函数
+
+`impulse()` 单位脉冲响应函数
+
+`initial()` 零输入响应函数
+
+`lsim()` 任意输入响应函数
+
