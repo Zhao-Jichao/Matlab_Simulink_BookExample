@@ -263,3 +263,20 @@ e.g. subs(f, {x,y}, {-1,2}) 对函数 f 中自变量 x 和 y 分别赋值 -1 和
 `obsvf()` 系统进行能观测性分解的函数
 
 `lyap()` `lyap2()` `dlyap()` 求解李亚普诺夫方程函数
+
+# 10. 线性系统状态空间设计
+
+# 11. 非线性系统
+
+`ode45()` 求解微分方程
+`odefun` `tspan` `t0` `tfinal`
+
+# 12. 离散控制系统
+
+## 表12.11 离散系统时域响应函数
+
+|函数名|调用格式|功能说明|
+|-|-|-|
+|dstep|dstep(dnum, dden, n)|求离散系统单位阶跃响应|
+|dimpulse|dimpulse(dnum, dden, n)|求离散系统单位脉冲响应|
+|dlsim|dlsim(dnum, dden, u)|求离散系统在输入 u 下的响应|
